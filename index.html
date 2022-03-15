@@ -32,6 +32,137 @@
 					<h3>Inventarsystem</h3>
 					<p><small>Julian Hackenberg, Gianluca Filitz</small></p>
 				</section>
+				<section data-auto-animate>
+					<h3>Gliederung</h3>
+					<div style="text-align: left; padding: 0 5rem;">
+						<p>1. Was das Inventarsystem ermöglichen muss</p>
+						<p>2. Wie wir das umgesetzt haben</p>
+						<p>3. Aktueller Zustand</p>
+						<p>4. Zukunftsausblick</p>
+					</div>
+				</section>
+				<section data-auto-animate>
+					<div style="text-align: left; padding: 0 2.5rem; margin-bottom: 5rem;">
+						<p style="font-weight: bold;">1. Was das Inventarsystem ermöglichen muss</p>
+					</div>
+					<ul>
+						<li>Schnelles Hinzufügen/Finden von Gegenständen</li>
+						<li>Eine übersichtliche, effiziente Verwaltung von größeren Datenmengen</li>
+						<li>Globale Erreichbarkeit der gleichen Daten durch alle Nutzer</li>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<div style="text-align: left; padding: 0 2.5rem; margin-bottom: 5rem;">
+						<p style="font-weight: bold;" >2. Wie wir das umgesetzt haben</p>
+					</div>
+					<div style="display: flex; flex-wrap: nowrap; justify-content: space-between;">
+						<div style="border: solid black 2px; width: 47.5%; padding: 1rem; box-sizing: border-box; text-align: left;">
+							<p>Ein Gegenstand:</p>
+							<ul>
+								<li>Name</li>
+								<li>Seriennummer</li>
+								<li>Gebäude + Raum</li>
+								<li>Kategorie</li>
+								<li>Gruppen</li>
+								<li>Tags</li>
+							</ul>
+						</div>
+						<div class="fragment fade-in-then-out" style="border: solid black 2px; width: 47.5%; padding: 1rem; box-sizing: border-box; text-align: left; position: absolute; right: 0;">
+							<p>Eine Kategorie:</p>
+							<p style="font-size: 18pt;">... ist die grobe Art des Gegenstands <br/> (z.B. Laptop)</p>
+							<ul>
+								<li>Name</li>
+								<li>Icon?</li>
+							</ul>
+						</div>
+						<div class="fragment fade-in-then-out" style="border: solid black 2px; width: 47.5%; padding: 1rem; box-sizing: border-box; text-align: left; position: absolute; right: 0;">
+							<p>Eine Gruppe:</p>
+							<p style="font-size: 18pt;">... ist die genaue Art des Gegenstands <br/> (z.B. MacBook Pro 2022)</p>
+							<ul>
+								<li>Name</li>
+								<li>Icon?</li>
+							</ul>
+						</div>
+						<div class="fragment fade-in" style="border: solid black 2px; width: 47.5%; padding: 1rem; box-sizing: border-box; text-align: left; position: absolute; right: 0;">
+							<p>Ein Tag:</p>
+							<p style="font-size: 18pt;">... ist eine Zusatzinformation, die dem Gegenstand zugeordnet wird <br/> (z.B. Größe: 16")</p>
+							<ul>
+								<li>Wert</li>
+								<li>Icon?</li>
+								<li>Schlüssel?</li>
+								<li>Farbschema?</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section data-auto-animate>
+					<div style="text-align: left; padding: 0 2.5rem; margin-bottom: 2.5rem;">
+						<p style="font-weight: bold;">2. Wie wir das umgesetzt haben</p>
+					</div>
+					<section>
+						<div style="padding: 0 2.5rem; text-align: left">
+							<p>Einfache und effiziente Bedienelemente: ☝</p>
+							<p style="font-size: 18pt;">... ermöglichen schnelles Hinzufügen/Finden von Gegenständen</p>
+							<ul>
+								<li class="fragment fade-up">BarcodeScanner 📷</li>
+								<li class="fragment fade-up">SearchBars 🔍</li>
+								<li class="fragment fade-up">SammelInputs 📁</li>
+							</ul>
+						</div>
+					</section>
+					<section>
+						<div style="padding: 0 2.5rem; text-align: left">
+							<p>Performance 🚀:</p>
+							<p style="font-size: 18pt;">... ermöglicht übersichtliche, effiziente Verwaltung von größeren Datenmengen</p>
+							<ul>
+								<li class="fragment fade-up">Svelte</li>
+								<li class="fragment fade-up">GraphQL</li>
+								<li class="fragment fade-up">Go</li>
+								<li class="fragment fade-up">PostgreSQL</li>
+							</ul>
+						</div>
+					</section>
+					<section>
+						<div style="padding: 0 2.5rem; text-align: left">
+							<p>Die Cloud ⛅😎:</p>
+							<p style="font-size: 18pt;">... ermöglicht generell fast alles (so auch das online Abrufen und Teilen von Daten)</p>
+							<ul>
+								<li class="fragment fade-up">Online von überall aufrufbar 🌐</li>
+								<li class="fragment fade-up">Gleicher Datensatz für alle 🤝</li>
+							</ul>
+						</div>
+					</section>
+				</section>
+				<section data-auto-animate>
+					<div style="text-align: left; padding: 0 2.5rem">
+						<p style="font-weight: bold;" >3. Aktueller Stand</p>
+					</div>
+					<img src="assets/landingPage.png" style="height: 60vh;" alt="Landing Page">
+				</section>
+				<section data-auto-animate>
+					<div style="text-align: left; padding: 0 2.5rem;">
+						<p style="font-weight: bold;" >3. Aktueller Stand</p>
+					</div>
+					<img src="assets/multipleInput.png" style="height: 60vh;" alt="Multiple Items Input">
+				</section>
+				<section data-auto-animate>
+					<div style="text-align: left; padding: 0 2.5rem;">
+						<p style="font-weight: bold;" >3. Aktueller Stand</p>
+					</div>
+					<img src="assets/buildingsAndRooms.png" style="height: 60vh;" alt="Buildings & Rooms Page">
+				</section>
+				<section data-auto-animate>
+					<div style="text-align: left; padding: 0 2.5rem;">
+						<p style="font-weight: bold;" >3. Aktueller Stand</p>
+					</div>
+					<img src="assets/itemTypeAttributes.png" style="height: 60vh;" alt="Categories, Groups & Tags Page">
+				</section>
+				<section data-auto-animate>
+					<div style="text-align: left; padding: 0 2.5rem;">
+						<p style="font-weight: bold;" >3. Aktueller Stand</p>
+					</div>
+					<img src="assets/editTagDialog.png" style="height: 60vh;" alt="Edit Tag Dialog">
+				</section>
 			</div>
 		</div>
 
