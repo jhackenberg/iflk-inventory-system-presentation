@@ -51,7 +51,7 @@
 						<li>Globale Erreichbarkeit der gleichen Daten durch alle Nutzer</li>
 					</ul>
 				</section>
-				<section data-auto-animate>
+				<section>
 					<div style="text-align: left; padding: 0 2.5rem; margin-bottom: 5rem;">
 						<p style="font-weight: bold;" >2. Wie wir das umgesetzt haben</p>
 					</div>
@@ -133,35 +133,42 @@
 						</div>
 					</section>
 				</section>
-				<section data-auto-animate>
-					<div style="text-align: left; padding: 0 2.5rem">
-						<p style="font-weight: bold;" >3. Aktueller Stand</p>
-					</div>
-					<img src="assets/landingPage.png" style="height: 60vh;" alt="Landing Page">
-				</section>
-				<section data-auto-animate>
-					<div style="text-align: left; padding: 0 2.5rem;">
-						<p style="font-weight: bold;" >3. Aktueller Stand</p>
-					</div>
-					<img src="assets/multipleInput.png" style="height: 60vh;" alt="Multiple Items Input">
-				</section>
-				<section data-auto-animate>
-					<div style="text-align: left; padding: 0 2.5rem;">
-						<p style="font-weight: bold;" >3. Aktueller Stand</p>
-					</div>
-					<img src="assets/buildingsAndRooms.png" style="height: 60vh;" alt="Buildings & Rooms Page">
-				</section>
-				<section data-auto-animate>
-					<div style="text-align: left; padding: 0 2.5rem;">
-						<p style="font-weight: bold;" >3. Aktueller Stand</p>
-					</div>
-					<img src="assets/itemTypeAttributes.png" style="height: 60vh;" alt="Categories, Groups & Tags Page">
-				</section>
-				<section data-auto-animate>
-					<div style="text-align: left; padding: 0 2.5rem;">
-						<p style="font-weight: bold;" >3. Aktueller Stand</p>
-					</div>
-					<img src="assets/editTagDialog.png" style="height: 60vh;" alt="Edit Tag Dialog">
+				<section>
+					<section data-auto-animate>
+						<div style="text-align: left; padding: 0 2.5rem">
+							<p style="font-weight: bold;" >3. Aktueller Stand</p>
+						</div>
+						<div><img src="assets/landingPage.png" style="height: 60vh;" alt="Landing Page"></div>
+						<small>Startseite</small>
+					</section>
+					<section data-auto-animate>
+						<div style="text-align: left; padding: 0 2.5rem;">
+							<p style="font-weight: bold;" >3. Aktueller Stand</p>
+						</div>
+						<div><img src="assets/multipleInput.png" style="height: 60vh;" alt="Multiple Items Input"></div>
+						<small>mehrere Gegenstände hinzufügen</small>
+					</section>
+					<section data-auto-animate>
+						<div style="text-align: left; padding: 0 2.5rem;">
+							<p style="font-weight: bold;" >3. Aktueller Stand</p>
+						</div>
+						<div><img src="assets/buildingsAndRooms.png" style="height: 60vh;" alt="Buildings & Rooms Page"></div>
+						<small>Gebäude & Räume</small>
+					</section>
+					<section data-auto-animate>
+						<div style="text-align: left; padding: 0 2.5rem;">
+							<p style="font-weight: bold;" >3. Aktueller Stand</p>
+						</div>
+						<div><img src="assets/itemTypeAttributes.png" style="height: 60vh;" alt="Categories, Groups & Tags Page"></div>
+						<small>Kategorien, Gruppen & Tags</small>
+					</section>
+					<section data-auto-animate>
+						<div style="text-align: left; padding: 0 2.5rem;">
+							<p style="font-weight: bold;" >3. Aktueller Stand</p>
+						</div>
+						<div><img src="assets/editTagDialog.png" style="height: 60vh;" alt="Edit Tag Dialog"></div>
+						<small>Tag bearbeiten</small>
+					</section>
 				</section>
 				<section data-auto-animate>
 					<div style="text-align: left; padding: 0 2.5rem">
@@ -201,15 +208,17 @@
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
+				slideNumber: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom ]
 			});
 		</script>
 	</body>
